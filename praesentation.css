@@ -1,46 +1,67 @@
 * {
+    /*nulstiller margin og padding på alle elementer*/
     margin: 0;
     padding: 0;
 }
 
+
 body {
+    /*baggrundsfarve for siden*/
     background-color: #FDEEEF;
+}
 
+/*navigationslinks*/
+.navlinks a {
+    text-decoration: none; /*fjerner streger under links*/
+    font-size: 20px; /*størrelse på link-tekst*/
+    font-family: "Roboto Flex", sans-serif; /*font*/
+    color: rgb(255, 255, 255); /*farve*/
+    font-weight: 200; /*tykkelse på fonten*/
+    position: relative; /*gør linket til forældre for ::after*/
+    display: inline-block; /*giver et "felt" hvor stregen kommer*/
+}
+
+.navlinks a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; /*afstand fra tekst*/
+    width: 0px; /*start-længde*/
+    height: 2px; /*tykkelse på streg*/
+    background-color: #FFCBE2; /*farve på streg*/
+    transition: width 0.3s ease; /*animation glidende*/
+}
+
+.navlinks a:hover::after {
+    width: 100%; /*hvad der sker når jeg hover - holder musen over*/
 }
 
 
-ul {
-
-}
-
-
-ul li a{
-    text-decoration: none;
-    font-size: 20px;
-    font-family: "Roboto Flex", sans-serif;
-    color: rgb(255, 255, 255);
-}
-
+/*navigationens container (menu baren)*/
 .navbar {
-    background-color: #000000;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row-reverse;
+    background-color: #000000; /*farve*/
+    height: 150px; /*højde*/
+    display: flex; /*aktivere flex layout*/
+    align-items: center; /*centrere indholdet lodret*/
+    justify-content: space-between; /*space mellem de to elementer*/
+    flex-direction: row; /*(logo højre og tekst venstre*/
     padding: 0 80px;
 }
 
+/*str på log*/
 .Logo {
     height: 220px;
     width: auto;
+    margin-right: 10px;
 }
 
+/*indstiller lister (links) - fjerner punkter, laver vandret, afstand*/
 .navlinks {
     list-style: none;
     display: flex;
     gap: 50px;
 }
+
 
 
 
