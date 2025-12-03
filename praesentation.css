@@ -44,7 +44,6 @@ body {
     display: flex; /*aktivere flex layout*/
     align-items: center; /*centrere indholdet lodret*/
     justify-content: space-between; /*space mellem de to elementer*/
-    flex-direction: row; /*(logo højre og tekst venstre*/
     padding: 0 80px;
 }
 
@@ -61,6 +60,12 @@ body {
     display: flex;
     gap: 50px;
 }
+
+
+
+
+
+
 
 
 
