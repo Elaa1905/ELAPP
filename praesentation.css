@@ -10,6 +10,8 @@ body {
     background-color: #FDEEEF;
 }
 
+
+
 /*navigationslinks*/
 .navlinks a {
     text-decoration: none; /*fjerner streger under links*/
@@ -62,6 +64,43 @@ body {
 }
 
 
+
+
+/*overskrift*/
+.hero-text {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+    flex: 1;
+    max-width: 500pxx;
+    color: #000000;
+}
+
+/*brødtekst*/
+.hero-text p {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 30px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row-reverse; /*bytter rundt på elementerne*/
+    justify-content: space-between;  /* tekst til venstre - billede til højre*/
+    align-items: center; /*centrere lodret*/
+    padding: 120px 80px; /*luft alle sider*/
+    gap: 60px; /*astand mellem tekst og billedet*/
+    flex-wrap: nowrap;
+}
+
+.hero-image {
+    width: 800px;
+    height: 500px;
+    flex-shrink: 0;
+    background-color: #000000;
+}
 
 
 
