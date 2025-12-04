@@ -69,7 +69,7 @@ body {
 /*overskrift*/
 .hero-text {
     font-family: "Cormorant Garamond", sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 30px;
     flex: 1;
     max-width: 500pxx;
@@ -79,7 +79,7 @@ body {
 /*brødtekst*/
 .hero-text p {
     font-family: "Roboto Flex", sans-serif;
-    font-size: 30px;
+    font-size: 32px;
     line-height: 1.7;
     margin-bottom: 15px;
     color: #000000;
@@ -95,11 +95,21 @@ body {
     flex-wrap: nowrap;
 }
 
+/*placering på img forside*/
 .hero-image {
-    width: 800px;
-    height: 500px;
-    flex-shrink: 0;
-    background-color: #000000;
+    flex: 1; /*tager plads i flexboxen*/
+    display: flex; /*gøre container til flexboks-kan styre img placering*/
+    justify-content: center; /*centrere vandret*/
+    align-items: center; /*centree lodret*/
+}
+
+/*img forside*/
+.hero-image img { 
+    width: 100%; /*tilpas containers bredde*/
+    max-width: 800px; /*max str*/
+    height: auto; /*bevarer img form*/
+    object-fit: cover; /*fyld plads ud*/
+
 }
 
 
