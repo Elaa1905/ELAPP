@@ -86,7 +86,7 @@ body {
 }
 
 .hero {
-    display: flex;
+    display: flex; /*aktivere flex layout*/
     flex-direction: row-reverse; /*bytter rundt på elementerne*/
     justify-content: space-between;  /* tekst til venstre - billede til højre*/
     align-items: center; /*centrere lodret*/
@@ -114,30 +114,33 @@ body {
 
 
 .signature {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 120px 0 60px;
+    width: 100%; /*sektion fylder hele bredden*/
+    display: flex; /*aktivere flex layout*/
+    flex-direction: column; /*placerer linje og logo ovenfor hinanden*/
+    align-items: center; /*centrere begge vandret*/
+    margin: 120px 0 60px; /*luft over og under*/
 }
 
+/*linje*/
 .sig-line {
-    width: 60%;
-    height: 1px;
+    width: 60%; /*længde på linje*/
+    height: 1px; /*tynd linje*/
     background-color: #8C2848;
     margin-bottom: 20px;
 }
 
-.sig-logo {
+/*str på logo*/
+.sig-logo { 
     height: 150px;
     width: auto;
 
 }
 
-.footer {
-    background-color: #000000;
+/*bunden af siden*/
+.footer { 
+    background-color: #000000; /*farve på footer*/
     color: #FDEEEF;
-    text-align: center;
+    text-align: center; /*centrere indhold i footer*/
     padding: 40px 0;
     font-family: "Roboto Flex", sans-serif;
     font-weight: 200;
@@ -145,10 +148,53 @@ body {
     margin-top: 120px;
 }
 
+/*margin og padding: margin - skubber boksen væk fra andre bokse. 
+padding - giver indholdet inde i boksen plads*/
 
+/*placering til overskrift*/
+.Om {
+    padding: 40px 80px 0;
+}
 
+/*overskrift*/
+.Om h1 {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 70px;
+    color: #000000;
+}
 
+.om-imgs {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 80px;
+    margin-top: 20px;
+}
 
+.img-box {
+    flex: 1;
+    height: 400px;
+    background-color: #8C2848;
+}
+
+.Præsentation {
+    padding: 40px 80px;
+    max-width: none;
+}
+
+.Præsentation p {
+    padding: 0 80px;
+    max-width: 800px;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 35px;
+    line-height: 1.7;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.bold {
+    font-weight: 500;
+}
 
 
 
