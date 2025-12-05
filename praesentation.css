@@ -163,37 +163,41 @@ padding - giver indholdet inde i boksen plads*/
     color: #000000;
 }
 
+/*placering af billeder*/
 .om-imgs {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 40px 80px;
-    margin-top: 20px;
+    display: flex; /*gøre container til flexboks-kan styre img placering*/
+    justify-content: space-between; /*space mellem img*/
+    gap: 40px; /*hvor meget afstand der er*/
+    padding: 40px 80px; /*luft fra siderne-top og bund*/
+    margin-top: 20px; /*afstand fra img til overskrift*/
 }
 
+/*billeder af mig*/
 .img-box {
-    flex: 1;
+    flex: 1; /*boksene deler pladsen lige imellemn dem*/
     height: 400px;
     background-color: #8C2848;
 }
 
 .Praesentation {
     padding: 40px 80px;
-    max-width: none;
+    max-width: none; /*ikke begrænse bredden og følge skærmen*/
 }
 
+/*styling af tekststykke under img*/
 .Praesentation p {
     font-family: "Roboto Flex", sans-serif;
     font-size: 35px;
     line-height: 1.7;
     color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /*luft mellem hver afsnit*/
 }
 
 .bold {
     font-weight: 500;
 }
 
+/*min baggrund tekststykke-fortæller om uddannelse og erfaring*/
 .Baggrund {
     padding: 0 80px;
     max-width: none;
@@ -206,6 +210,7 @@ padding - giver indholdet inde i boksen plads*/
     color: #000000;
 }
 
+/*split linje mellem om mig og min baggrund*/
 .split-line {
     width: 100%;
     height: 1px;
