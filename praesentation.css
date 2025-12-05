@@ -187,7 +187,7 @@ padding - giver indholdet inde i boksen plads*/
 /*styling af tekststykke under img*/
 .Praesentation p {
     font-family: "Roboto Flex", sans-serif;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 1.7;
     color: #000000;
     margin-bottom: 20px; /*luft mellem hver afsnit*/
@@ -204,6 +204,12 @@ padding - giver indholdet inde i boksen plads*/
 }
 
 .Praesentation h2 {
+    margin-top: 20px;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 40px;
+    color: #000000;
+}
+.Praesentation h3 {
     margin-top: 20px;
     font-family: "Cormorant Garamond", sans-serif;
     font-size: 40px;
