@@ -177,14 +177,12 @@ padding - giver indholdet inde i boksen plads*/
     background-color: #8C2848;
 }
 
-.Præsentation {
+.Praesentation {
     padding: 40px 80px;
     max-width: none;
 }
 
-.Præsentation p {
-    padding: 0 80px;
-    max-width: 800px;
+.Praesentation p {
     font-family: "Roboto Flex", sans-serif;
     font-size: 35px;
     line-height: 1.7;
@@ -195,6 +193,27 @@ padding - giver indholdet inde i boksen plads*/
 .bold {
     font-weight: 500;
 }
+
+.Baggrund {
+    padding: 0 80px;
+    max-width: none;
+}
+
+.Praesentation h2 {
+    margin-top: 20px;
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 40px;
+    color: #000000;
+}
+
+.split-line {
+    width: 100%;
+    height: 1px;
+    background-color: #8C2848;
+    margin: 60px auto;
+}
+
+
 
 
 
