@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="da"> <!--sprog og direction du skriver i, left to right-->
+<head>
+    <meta charset="UTF-8"> <!--europæiske tegnkodning-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tilpasser siden til forskellige enheders størrelser-->
+    <title>Præsentationsportfolio</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <!--link til font-->
+    <link rel="stylesheet" href="praesentation.css"> <!--link til css fil-->
+
+</head>
+
+<body>
+    <header> <!--side hoved med navigation-->
+        <nav class="navbar"> <!--navigationens container-->
+            <img src="Logo.hvid.png" alt="Mit Logo" class="Logo"> <!--logo i header-->
+            
+            <!--liste med menuens links-->
+            <ul class="navlinks">
+                <li><a href="PresentationP.html">Forside</a></li>
+                <li><a href="Ommig.html">Om mig</a></li>
+                <li><a href="Projekter.html">Projekter</a></li>
+                <li><a href="kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Overskrift til projekt-siden-->
+    <section class="Projekter">
+    <h1>Seneste projekter</h1>
+    </section>
+
+    <section class="Pimg1-tekstboks"> <!--sektion stykke til tekst-->
+        <div class="Pimg1-tekst"> <!--tekst-boks i venstre side-->
+            <h1>Produkt fotografering</h1> <!--Overskrift-->
+            <!--brødtekst--> 
+            <br> 
+            <p>Kort tekst til projektet</p>
+        </div>
+        <!--container til billed-slider-->
+         <div class="Pimg1">
+            <div class="slider">
+                <button class="prev">‹</button> <!--venstre pil-->
+
+            <!--mine billeder i slider-->
+            <img src="Kikoblush.webp" class="slide active">
+            <img src="Kikopallette.jpeg" class="slide">
+            <img src="Rhodetoner2.jpeg" class="slide">
+            <img src="Rhodeset.jpeg" class="slide">
+            <img src="BeautyJ1.jpeg" class="slide">
+            <img src="Kikolipgloss.jpeg" class="slide">
+                <button class="next">›</button> <!--højre pil-->
+        </div> 
+     </div> 
+</section>
+
+<!--javascript delen - gør slider interaktiv-->
+<script>
+//variablerne og opsætningen starter her
+let currentSlide = 0; //styrer hvilket img vises
+const slides = document.querySelectorAll(".slide"); //finder alle img med class "slide"
+
+//funktionen for at skifte billede
+function showSlide(n) { //skifter img i slideren
+        slides.forEach((slide, index) => {
+            slide.classList.toggle("active", index === n); //går igennem alle img - kun img der machter n klassen er active
+        });
+}
+
+//højre pil - gå frem
+document.querySelector(".next").addEventListener("click",() => {
+    currentSlide = (currentSlide + 1) % slides.length; //lægger 1 til currentslide - går frem til næste img. Slide length gør det starter forfra, når den når slut!
+    showSlide(currentSlide); //kør gennem funktionen showSlide - vis det slide-nr, som currentSlide indeholder
+});
+
+//venstre pil - gå tilbage
+document.querySelector(".prev").addEventListener("click", () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length; //samme princip gælder her MEN trækker 1 fra - går tilbage til forrige img + tilbage til start når man når sidste slide
+    showSlide(currentSlide);
+});
+</script>
+
+</body>
+</html>

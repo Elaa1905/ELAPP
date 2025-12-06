@@ -224,7 +224,107 @@ padding - giver indholdet inde i boksen plads*/
     margin: 60px auto;
 }
 
+/*placering til overskrift projekt*/
+.Projekter {
+    padding: 40px 190px 0;
+}
 
+/*Seneste projekter*/
+.Projekter h1 {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 70px;
+    color: #000000;
+}
 
+/*brødtekst overskrift produkt fotografering*/
+.Pimg1-tekst h1 {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 50px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+/*brødtekst overskrift produkt fotografering*/
+.Pimg1-tekst p {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 35px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.Pimg1-tekstboks {
+    display: flex; /*aktivere flex layout*/
+    flex-direction: row-reverse; /*bytter rundt på elementerne*/
+    justify-content: space-between;  /* tekst til venstre - billede til højre*/
+    align-items: flex-start; /*placere teksten i flex-startt*/
+    padding: 120px 120px; /*luft alle sider*/
+    gap: 30px; /*astand mellem tekst og billedet*/
+    flex-wrap: nowrap;
+}
+
+.Pimg1-tekstboks > div {
+    flex: 1;
+}
+
+/*placering på img forside*/
+.Pimg1 {
+    flex: 1; /*tager plads i flexboxen*/
+    display: flex; /*gøre container til flexboks-kan styre img placering*/
+    justify-content: center; /*centrere vandret*/
+    align-items: center; /*centree lodret*/
+}
+
+/*img forside*/
+.Pimg1 img { 
+    width: 100%; /*tilpas containers bredde*/
+    max-width: 800px; /*max str*/
+    height: auto; /*bevarer img form*/
+    object-fit: cover; /*fyld plads ud*/
+    border: 2px solid #000000;
+
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: #ffff;
+    border: none;
+    font-size: 40px;
+    padding: 10px 15px;  
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
 
 
