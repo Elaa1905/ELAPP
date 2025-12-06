@@ -282,47 +282,53 @@ padding - giver indholdet inde i boksen plads*/
     max-width: 800px; /*max str*/
     height: auto; /*bevarer img form*/
     object-fit: cover; /*fyld plads ud*/
-    border: 2px solid #000000;
 
 }
 
+/*sliderens container - holder alle billeder i samme container*/
 .slider {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    overflow: hidden;
+    position: relative; /*gør muligt at placere pile i boksen*/
+    width: 100%; /*fyld hele bredden af pladsen*/
+    max-width: 800px; /*slider må ikke blive større end det*/
+    overflow: hidden; /*skjuler billederne udenfor rammen*/
+    border: 3px solid black;
 }
 
+/*alle slides billeder der er skjult*/
 .slide {
-    display: none;
-    width: 100%;
+    display: none; /*img vises ikke før de bliver aktive*/
+    width: 100%; /*fylder hele sliderens bredde*/
 }
 
+/*den aktive billede som vises*/
 .slide.active {
-    display: block;
+    display: block; /*viser den valgte img*/
 }
-
+ /*styling af begge pile*/
 .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.4);
-    color: #ffff;
-    border: none;
+    position: absolute; /*placere ovenpå slide*/
+    top: 50%; /*midt på billede lodret*/
+    transform: translateY(-50%); /*centrere præcis*/
+    background: rgba(0, 0, 0, 0.4); /*halvtransparent sort baggrund*/
+    color: #ffff; /*hvis pil*/
+    border: none; /*ingen kant rundt om*/
     font-size: 40px;
     padding: 10px 15px;  
-    cursor: pointer;
-    border-radius: 5px;
+    cursor: pointer; /*viser klik-mus*/
+    border-radius: 3px; /*afrundede hjørner*/
 }
 
+/*venstre pil*/
 .prev {
-    left: 10px;
+    left: 10px; /*placere 10px fra v kant*/
 }
 
+/*højre pil*/
 .next {
-    right: 10px;
+    right: 10px; /*placere 10px fra h kant*/
 }
 
+/*hover - pilens baggrund bliver mørkere når man holder musen over*/
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.6);
 }
