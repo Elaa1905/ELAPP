@@ -1,4 +1,7 @@
-/*FORSIDE*/
+
+/*-----------------------*/
+/*========FORSIDE========*/
+/*-----------------------*/
 
 * {
     /*nulstiller margin og padding på alle elementer*/
@@ -151,7 +154,10 @@ body {
     margin-top: 120px;
 }
 
-/*OM MIG SIDE*/
+
+/*-----------------------*/
+/*======OM MIG SIDE======*/
+/*-----------------------*/
 
 /*margin og padding: margin - skubber boksen væk fra andre bokse. 
 padding - giver indholdet inde i boksen plads*/
@@ -229,7 +235,11 @@ padding - giver indholdet inde i boksen plads*/
     margin: 60px auto;
 }
 
-/*PROJEKT SIDE*/
+
+
+/*-----------------------*/
+/*======PROJEKT SIDE=====*/
+/*-----------------------*/
 
 /*placering til overskrift projekt*/
 .Projekter {
@@ -347,8 +357,27 @@ padding - giver indholdet inde i boksen plads*/
     margin: 60px auto;
 }
 
+.projekt-knap {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #6a1f39;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: 20px;
+    transition: 0.2s;
+}
 
+.projekt-knap:hover {
+    background-color: #6a1f39;
+}
+
+
+
+/*-----------------------*/
 /*========KONTAKT========*/
+/*-----------------------*/
 
 /*Ydre container til kontaktformularen (sorte boks)*/
 .kontakt {
@@ -361,7 +390,7 @@ padding - giver indholdet inde i boksen plads*/
 .kontaktform {
     width: 100%; /*fylder hele bredden*/
     max-width: 600px; /*ikke større end 600*/
-    background-color: #000000;
+    background-color: #8C2848;
     padding: 40px; /*luft i boks*/
     border-radius: 12px; /*runde hjørner*/
     text-align: center; /*centrere text*/
@@ -376,7 +405,7 @@ padding - giver indholdet inde i boksen plads*/
     font-family: "Roboto Flex", sans-serif;
     font-size: 18px;
     background-color: #fff; /*hvid baggrund inden i felterne*/
-    border: 1px solid #8C2848; /*kant farve*/
+    border: 1px solid #fff; /*kant farve*/
     border-radius: 5px;
     outline: none; /*fjerne blå kant i felterne*/
     margin-bottom: 20px;
@@ -385,8 +414,8 @@ padding - giver indholdet inde i boksen plads*/
 
 /*send knap*/
 .kontaktform button {
-    background-color: #8C2848;
-    color: #FDEEEF;
+    background-color: #fff;
+    color: #000000;
     font-family: "Roboto Flex", sans-serif;
     font-size: 20px;
     padding: 14px 22px;
@@ -398,7 +427,7 @@ padding - giver indholdet inde i boksen plads*/
 
 /*hover effekt på knappen*/
 .kontaktform button:hover {
-    background-color: #6a1f39 /*mørkere farve*/
+    background-color: #9a5b79 /*mørkere farve*/
 }
 
 
@@ -450,11 +479,19 @@ padding - giver indholdet inde i boksen plads*/
     margin: 10px 0 0;
 }
 
-/*billede om mig*/
+
+/*billede om mig */
 .om-imgs {
     flex-direction: column; /*billeder under hinanden*/
+    align-items: center;
     padding: 20px;
     gap: 20px;
+}
+
+.img-box {
+    width: 100%;
+    max-width: 600px;
+    height: 260px;
 }
 
 
