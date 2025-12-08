@@ -17,7 +17,7 @@ body {
 /*navigationslinks*/
 .navlinks a {
     text-decoration: none; /*fjerner streger under links*/
-    font-size: 20px; /*størrelse på link-tekst*/
+    font-size: 18px; /*størrelse på link-tekst*/
     font-family: "Roboto Flex", sans-serif; /*font*/
     color: rgb(255, 255, 255); /*farve*/
     font-weight: 200; /*tykkelse på fonten*/
@@ -44,7 +44,7 @@ body {
 /*navigationens container (menu baren)*/
 .navbar {
     background-color: #000000; /*farve*/
-    height: 150px; /*højde*/
+    height: 130px; /*højde*/
     display: flex; /*aktivere flex layout*/
     align-items: center; /*centrere indholdet lodret*/
     justify-content: space-between; /*space mellem de to elementer*/
@@ -53,7 +53,7 @@ body {
 
 /*str på log*/
 .Logo {
-    height: 220px;
+    height: 150px;
     width: auto;
     margin-right: 10px;
 }
@@ -71,17 +71,17 @@ body {
 /*overskrift*/
 .hero-text {
     font-family: "Cormorant Garamond", sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 30px;
     flex: 1;
-    max-width: 500pxx;
+    max-width: 550px;
     color: #000000;
 }
 
 /*brødtekst*/
 .hero-text p {
     font-family: "Roboto Flex", sans-serif;
-    font-size: 32px;
+    font-size: 21px;
     line-height: 1.7;
     margin-bottom: 15px;
     color: #000000;
@@ -89,17 +89,18 @@ body {
 
 .hero {
     display: flex; /*aktivere flex layout*/
-    flex-direction: row-reverse; /*bytter rundt på elementerne*/
-    justify-content: space-between;  /* tekst til venstre - billede til højre*/
+    flex-direction: row-reverse;
+    justify-content: center;  /* tekst til venstre - billede til højre*/
     align-items: center; /*centrere lodret*/
-    padding: 120px 80px; /*luft alle sider*/
+    padding: 80px 80px; /*luft alle sider*/
     gap: 60px; /*astand mellem tekst og billedet*/
-    flex-wrap: nowrap;
 }
 
 /*placering på img forside*/
 .hero-image {
     flex: 1; /*tager plads i flexboxen*/
+    max-width: 550px;
+     width: 100%;
     display: flex; /*gøre container til flexboks-kan styre img placering*/
     justify-content: center; /*centrere vandret*/
     align-items: center; /*centree lodret*/
@@ -108,7 +109,7 @@ body {
 /*img forside*/
 .hero-image img { 
     width: 100%; /*tilpas containers bredde*/
-    max-width: 800px; /*max str*/
+    max-width: 480px; /*max str*/
     height: auto; /*bevarer img form*/
     object-fit: cover; /*fyld plads ud*/
 
@@ -133,7 +134,7 @@ body {
 
 /*str på logo*/
 .sig-logo { 
-    height: 150px;
+    height: 100px;
     width: auto;
 
 }
@@ -163,7 +164,7 @@ padding - giver indholdet inde i boksen plads*/
 /*overskrift*/
 .Om h1 {
     font-family: "Cormorant Garamond", sans-serif;
-    font-size: 70px;
+    font-size: 60px;
     color: #000000;
 }
 
@@ -179,7 +180,7 @@ padding - giver indholdet inde i boksen plads*/
 /*billeder af mig*/
 .img-box {
     flex: 1; /*boksene deler pladsen lige imellemn dem*/
-    height: 400px;
+    height: 300px;
     background-color: #8C2848;
 }
 
@@ -191,7 +192,7 @@ padding - giver indholdet inde i boksen plads*/
 /*styling af tekststykke under img*/
 .Praesentation p {
     font-family: "Roboto Flex", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.7;
     color: #000000;
     margin-bottom: 20px; /*luft mellem hver afsnit*/
@@ -238,14 +239,14 @@ padding - giver indholdet inde i boksen plads*/
 /*Seneste projekter*/
 .Projekter h1 {
     font-family: "Cormorant Garamond", sans-serif;
-    font-size: 70px;
+    font-size: 60px;
     color: #000000;
 }
 
 /*brødtekst overskrift produkt fotografering*/
 .Pimg1-tekst h1 {
     font-family: "Roboto Flex", sans-serif;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1.7;
     margin-bottom: 15px;
     color: #000000;
@@ -254,7 +255,7 @@ padding - giver indholdet inde i boksen plads*/
 /*brødtekst overskrift produkt fotografering*/
 .Pimg1-tekst p {
     font-family: "Roboto Flex", sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     line-height: 1.7;
     margin-bottom: 15px;
     color: #000000;
@@ -267,7 +268,6 @@ padding - giver indholdet inde i boksen plads*/
     align-items: flex-start; /*placere teksten i flex-startt*/
     padding: 120px 120px; /*luft alle sider*/
     gap: 50px; /*astand mellem tekst og billedet*/
-    flex-wrap: nowrap;
 }
 
 .Pimg1-tekstboks > div {
@@ -347,3 +347,133 @@ padding - giver indholdet inde i boksen plads*/
     margin: 60px auto;
 }
 
+
+/*========KONTAKT========*/
+
+/*Ydre container til kontaktformularen (sorte boks)*/
+.kontakt {
+    display: flex; /*gøre container til flexbox - muligt at styre indhold*/
+    justify-content: center; /*centrere formularen vandret*/
+    padding: 60px 20px; /*luft over, ned, sider*/
+}
+
+/*den sorte boks*/
+.kontaktform {
+    width: 100%; /*fylder hele bredden*/
+    max-width: 600px; /*ikke større end 600*/
+    background-color: #000000;
+    padding: 40px; /*luft i boks*/
+    border-radius: 12px; /*runde hjørner*/
+    text-align: center; /*centrere text*/
+}
+
+/*input (tekst til at skrive) og tekstfelt*/
+.kontaktform input, .kontaktform textarea {
+    width: 100%; /*felterne skal fylde alt plads i boksen*/
+    max-width: 500px; 
+    margin: 0 auto 20px auto; /*centrere felterne + afstand mellem nedad*/
+    padding: 14px 16px; /*luft ind i felterne*/
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 18px;
+    background-color: #fff; /*hvid baggrund inden i felterne*/
+    border: 1px solid #8C2848; /*kant farve*/
+    border-radius: 5px;
+    outline: none; /*fjerne blå kant i felterne*/
+    margin-bottom: 20px;
+    display: block; /*sørger for at margin auto virker*/
+}
+
+/*send knap*/
+.kontaktform button {
+    background-color: #8C2848;
+    color: #FDEEEF;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 20px;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 6px ;
+    cursor: pointer; /*hånd (klik mus) når man hover*/
+    transition: 0.2s ease; /*glat overgang når farven ændre sig*/
+}
+
+/*hover effekt på knappen*/
+.kontaktform button:hover {
+    background-color: #6a1f39 /*mørkere farve*/
+}
+
+
+/*---------------------------*/
+/*========MOBILE FIST========*/
+/*---------------------------*/
+
+@media (max-width: 1100px) {
+
+/*billede og tekst placering*/
+.hero {
+    flex-direction: column-reverse;   /*billede øverst - tekst nederst*/
+    padding: 40px 20px; /*mindre lfut på små skærme*/
+    gap: 30px; /*afstand mellem elementerne*/
+    text-align: center; /*centrere tekst*/
+}    
+
+/*teksten ved siden af billede*/
+.hero-text {
+    font-family: "Cormorant Garamond", sans-serif;
+    margin-bottom: 30px;
+    flex: 1;
+    max-width: none;      /*tillader tekst kan fylde mere*/
+    font-size: 28px;      /*mindre font str*/
+    padding: 0 10px;      /*luft fra skærmens kanter*/
+    color: #000000;
+    align-items: left; /*placere venstre*/
+}
+
+
+/*billede ved siden af teksten*/
+.hero-image img {
+    width: 100%; /*billede fylder bredden*/
+    max-width: 100%; /*minus begrænsing*/
+    height: auto;
+}
+
+/*menu*/
+.navbar {
+    height: auto;
+    flex-direction: column; /*menu bliver lodret*/
+    padding: 20px;
+    gap: 20px;
+}
+
+/*menu indhold-links*/
+.navlinks {
+    gap: 20px;
+    margin: 10px 0 0;
+}
+
+/*billede om mig*/
+.om-imgs {
+    flex-direction: column; /*billeder under hinanden*/
+    padding: 20px;
+    gap: 20px;
+}
+
+
+/*projekt tekst*/
+.Pimg1-tekstboks {
+    flex-direction: column-reverse; /*billede over tekst*/
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.Pimg1 img {
+    width: 100%; /*fyld hele bredde*/
+    max-width: 100%;
+    height: auto;
+}
+
+.Projekter {
+    padding: 40px 20px 0;
+    
+}
+
+}

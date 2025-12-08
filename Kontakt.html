@@ -20,10 +20,10 @@
             
             <!--liste med menuens links-->
             <ul class="navlinks">
-                <li><a href="PresentationP.html">Forside</a></li>
-                <li><a href="Ommig.html">Om mig</a></li>
-                <li><a href="Projekter.html">Projekter</a></li>
-                <li><a href="Kontakt.html">Kontakt</a></li>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="ommig.html">Om mig</a></li>
+                <li><a href="projekter.html">Projekter</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -38,12 +38,23 @@
             <h1>Kontaktoplysninger</h1> <!--Overskrift-->
             <!--brødtekst--> 
             <br> 
-            <p>Kort tekst til projektet</p>
+            <p><span class="bold">Telefon:</span> +45 53 57 34 12
+            <br> <!--break-->
+            <p><span class="bold">E-mail:</span> elakoycu@outlook.dk</p>
         </div>
         <!--container til billed-slider-->
          <div class="Pimg1">
             <img src="Kikoblush.webp" class="projektbillede"> 
      </div> 
+    </section>
+
+    <section class="kontakt">
+        <form action="send.php" method="POST" class="kontaktform">
+            <input type="text" name="navn" placeholder="Navn" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <textarea name="besked" placeholder="Besked..." required></textarea>
+            <button type="submit">Send besked</button>
+        </form>
     </section>
 
 <!--splitlinje mellem projekter-->
