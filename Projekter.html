@@ -16,7 +16,7 @@
 <body>
     <header> <!--side hoved med navigation-->
         <nav class="navbar"> <!--navigationens container-->
-            <img src="Logo.hvid.png" alt="Mit Logo" class="Logo"> <!--logo i header-->
+            <img src="image/Logo.hvid.png" alt="Mit Logo" class="Logo"> <!--logo i header-->
             
             <!--liste med menuens links-->
             <ul class="navlinks">
@@ -31,19 +31,29 @@
     <!--Overskrift til projekt-siden-->
     <section class="Projekter">
     <h1>Seneste projekter</h1>
+
+    <nav class="projekt-menu">
+        <a href="#p1">Produkt fotografering</a>
+        <a href="#p2">SO-ME InstragramREEL</a>
+        <a href="#p3">Beauty App Projekt</a>
+        <a href="#p4">Reklame for KIKO MILANO</a>
+        <a href="#p5">Protrætbilleder</a>
+        <a href="#p6">ToV IG-opslag</a>
+    </nav>
     </section>
-
-
 
 
     <!--PRODUKTFOTO PROJEKT-->
 
-    <section class="Pimg1-tekstboks"> <!--sektion stykke til tekst-->
+    <section id="p1" class="Pimg1-tekstboks"> <!--sektion stykke til tekst-->
         <div class="Pimg1-tekst"> <!--tekst-boks i venstre side-->
             <h1>Produkt fotografering</h1> <!--Overskrift-->
             <!--brødtekst--> 
             <br> 
-            <p>Kort tekst til projektet</p>
+            <p>Mit lille projekt her undersøger, hvordan man bedst fremhæver de perfekte vinkler af beauty produkter. 
+            <br>
+                Læs mere om det nedenfor.
+            </p>
 
             <a href="produktfotografering.html" class="projekt-knap">Klik her</a>
         </div>
@@ -54,12 +64,11 @@
                 <button class="prev">‹</button> <!--venstre pil-->
 
             <!--mine billeder i slider-->
-            <img src="Kikoblush.webp" class="slide active">
-            <img src="Kikopallette.jpeg" class="slide">
-            <img src="Rhodetoner2.jpeg" class="slide">
-            <img src="Rhodeset.jpeg" class="slide">
-            <img src="BeautyJ1.jpeg" class="slide">
-            <img src="Kikolipgloss.jpeg" class="slide">
+            <img src="image/Redigeret blush.webp" class="slide active">
+            <img src="image/Redigeret palette.webp" class="slide">
+            <img src="image/Redigeret beautyJ.webp" class="slide">
+            <img src="image/Redigeret beautyJ2.webp" class="slide">
+            <img src="images/Redigeret kikolips.webp" class="slide">
                 <button class="next">›</button> <!--højre pil-->
         </div> 
      </div> 
@@ -104,16 +113,20 @@ document.querySelector(".prev").addEventListener("click", () => {
 
 <!--INSTAREEL PROJEKT-->
 
-    <section class="Pimg1-tekstboks"> <!--sektion stykke til tekst-->
+    <section id="p2" class="Pimg1-tekstboks"> <!--sektion stykke til tekst-->
         <div class="Pimg1-tekst"> <!--tekst-boks i venstre side-->
             <h1>SO-ME InstagramReel</h1> <!--Overskrift-->
             <!--brødtekst--> 
             <br> 
-            <p>Kort tekst til projektet</p>
+            <p>Her har jeg ved hjælp af Instagram lavet en lille GRWM video, som mange unge piger og kvinder elsker at se
+                og hente inspiration fra på sociale medier ♡
+                
         </div>
         <!--container til billed-slider-->
          <div class="Pimg1">
-            <img src="Kikoblush.webp" class="projektbillede"> 
+            <video controls class="insta-video">
+                <source src="video/Instareel-projekt.mp4" type="video/mp4">
+            </video>
      </div> 
 </section>
 
@@ -123,21 +136,22 @@ document.querySelector(".prev").addEventListener("click", () => {
 </section>
 
 
-
-
 <!--BEAUTY APP PROJEKT-->
 
-    <section class="Pimg1-tekstboks"> <!--sektion stykke til tekst-->
+    <section id="p3" class="Pimg1-tekstboks"> <!--sektion stykke til tekst-->
         <div class="Pimg1-tekst"> <!--tekst-boks i venstre side-->
             <h1>Beauty App Projekt</h1> <!--Overskrift-->
             <!--brødtekst--> 
             <br> 
-            <p>Kort tekst til projektet</p>
+            <p>En lille app-idé med fokus på at skabe en æstetisk og brugervenlig app til de beauty interesserede.</p>
+            <a href="beautyapp.html" class="projekt-knap">Klik her</a>
         </div>
-        <!--container til billed-slider-->
+
+            <!--container til billed-slider-->
          <div class="Pimg1">
-            <img src="Kikoblush.webp" class="projektbillede"> 
-     </div> 
+            <img src="image/The beauty app.webp" class="projektbillede"> 
+    
+        </div> 
 </section>
 
 <!--splitlinje mellem projekter-->
@@ -150,16 +164,22 @@ document.querySelector(".prev").addEventListener("click", () => {
 
 <!--REKLAMEPLAKAT PROJEKT-->
 
-    <section class="Pimg1-tekstboks"> <!--sektion stykke til tekst-->
+    <section id="p4" class="Pimg1-tekstboks"> <!--sektion stykke til tekst-->
         <div class="Pimg1-tekst"> <!--tekst-boks i venstre side-->
-            <h1>Reklameplakat for KIKO MILANO</h1> <!--Overskrift-->
+            <h1>Reklameplakat for 
+            <br>
+            KIKO MILANO</h1> <!--Overskrift-->
             <!--brødtekst--> 
             <br> 
-            <p>Kort tekst til projektet</p>
+            <p> Jeg har udarbejdet en reklameplakat i Adobe Indesign, hvor jeg primært har forkuseret
+                på layout, fonts og farvevalg. Produktbilledet er mit eget foto, som jeg har taget og redigeret i Adobe Lightroom Classic,
+                for at fremhæve nuancerne og give et mere æstetisk og rent look. Jeg valgte dette produkt, da
+                den bordeauxrøde farve står i smuk kontrast til baggrunden, og skaber den perfekte efterårsstemning!
+            </p>
         </div>
         <!--container til billed-slider-->
-         <div class="Pimg1">
-            <img src="Kikoblush.webp" class="projektbillede"> 
+         <div class="kikop">
+            <img src="image/reklamekiko.webp" class="kikoplakat"> 
      </div> 
 </section>
 
@@ -173,16 +193,19 @@ document.querySelector(".prev").addEventListener("click", () => {
 
 <!--PROTRÆT BILLEDE PROJEKT-->
     
-    <section class="Pimg1-tekstboks"> <!--sektion stykke til tekst-->
+    <section id="p5" class="Pimg1-tekstboks"> <!--sektion stykke til tekst-->
         <div class="Pimg1-tekst"> <!--tekst-boks i venstre side-->
             <h1>Protrætbilleder</h1> <!--Overskrift-->
             <!--brødtekst--> 
             <br> 
-            <p>Kort tekst til projektet</p>
+            <p>Et lille protrætbillede projekt, hvor jeg har arbejdet med en mørk baggrund og noget blødt hvidt lys, for at skabe 
+                et enkelt, rent og elegant look. Kontrasten mellem lyset og baggrunden fremhæver ansigtstræk, samtidig med valget af tøjfarve
+                som skiller sig ud af den sorte baggrund. Målet med projektet var at skabe protrætter, der føles varme og professionelle.
+            </p>
         </div>
         <!--container til billed-slider-->
          <div class="Pimg1">
-            <img src="Kikoblush.webp" class="projektbillede"> 
+            <img src="image/protrætimgs.webp" class="projektbillede"> 
      </div> 
 </section>
 
@@ -196,9 +219,9 @@ document.querySelector(".prev").addEventListener("click", () => {
 
 <!--Instagram profil-->
 
-    <section class="Pimg1-tekstboks"> <!--sektion stykke til tekst-->
+    <section id="p6" class="Pimg1-tekstboks"> <!--sektion stykke til tekst-->
         <div class="Pimg1-tekst"> <!--tekst-boks i venstre side-->
-            <h1>Instagram profil</h1> <!--Overskrift-->
+            <h1>ToV IG-opslag</h1> <!--Overskrift-->
             <!--brødtekst--> 
             <br> 
             <p>Kort tekst til projektet</p>
@@ -209,15 +232,11 @@ document.querySelector(".prev").addEventListener("click", () => {
      </div> 
 </section>
 
-<!--splitlinje mellem projekter-->
-<section>
-    <div class="split-line2"></div> <!--tynd splitlinje-->
-</section>
 
     <!--afsluttende signatur (min personlige markering)-->
     <section class="signature">
     <div class="sig-line"></div> <!--tynd linje-->
-    <img src="Logo.sort.png" alt="Logo foot" class="sig-logo"> <!--loget under linje-->
+    <img src="image/Logo.sort.png" alt="Logo foot" class="sig-logo"> <!--loget under linje-->
     </section>
 
     <!--footer nederst på side med navn og udannelse-->

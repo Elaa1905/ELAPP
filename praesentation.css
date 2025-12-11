@@ -84,7 +84,7 @@ body {
 /*brødtekst*/
 .hero-text p {
     font-family: "Roboto Flex", sans-serif;
-    font-size: 21px;
+    font-size: 23px;
     line-height: 1.7;
     margin-bottom: 15px;
     color: #000000;
@@ -164,7 +164,7 @@ padding - giver indholdet inde i boksen plads*/
 
 /*placering til overskrift*/
 .Om {
-    padding: 40px 80px 0;
+    padding: 40px 120px 0;
 }
 
 /*overskrift*/
@@ -174,24 +174,10 @@ padding - giver indholdet inde i boksen plads*/
     color: #000000;
 }
 
-/*placering af billeder*/
-.om-imgs {
-    display: flex; /*gøre container til flexboks-kan styre img placering*/
-    justify-content: space-between; /*space mellem img*/
-    gap: 40px; /*hvor meget afstand der er*/
-    padding: 40px 80px; /*luft fra siderne-top og bund*/
-    margin-top: 20px; /*afstand fra img til overskrift*/
-}
 
-/*billeder af mig*/
-.img-box {
-    flex: 1; /*boksene deler pladsen lige imellemn dem*/
-    height: 300px;
-    background-color: #8C2848;
-}
 
 .Praesentation {
-    padding: 40px 80px;
+    padding: 40px 120px;
     max-width: none; /*ikke begrænse bredden og følge skærmen*/
 }
 
@@ -210,7 +196,7 @@ padding - giver indholdet inde i boksen plads*/
 
 /*min baggrund tekststykke-fortæller om uddannelse og erfaring*/
 .Baggrund {
-    padding: 0 80px;
+    padding: 0 120px;
     max-width: none;
 }
 
@@ -240,6 +226,30 @@ padding - giver indholdet inde i boksen plads*/
 /*-----------------------*/
 /*======PROJEKT SIDE=====*/
 /*-----------------------*/
+
+/*projekt menu*/
+.projekt-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.projekt-menu a {
+    padding: 8px 16px;
+    background: #8C2848;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-family: "Roboto Flex", sans-serif;
+    transition: 0.2s;
+}
+
+.projekt-menu a:hover {
+    background: #5d2434;
+}
 
 /*placering til overskrift projekt*/
 .Projekter {
@@ -286,7 +296,7 @@ padding - giver indholdet inde i boksen plads*/
 
 /*placering på img forside*/
 .Pimg1 {
-    flex: 1; /*tager plads i flexboxen*/
+    flex: none; /*tager plads i flexboxen*/
     display: flex; /*gøre container til flexboks-kan styre img placering*/
     justify-content: center; /*centrere vandret*/
     align-items: center; /*centree lodret*/
@@ -371,6 +381,73 @@ padding - giver indholdet inde i boksen plads*/
 
 .projekt-knap:hover {
     background-color: #6a1f39;
+}
+
+.Pfoto-tekst p {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 22px;
+    line-height: 1.7;
+    color: #000000;
+    margin-bottom: 10px; /*luft mellem hver afsnit*/
+    padding: 40px 120px 0;
+}
+
+.rhode-billede {
+    max-width: 650px;
+    height: 350px;
+    display: block;
+    margin: 40px 0;
+    margin-left: 120px;
+    border: 2px solid #000000;
+    padding: 0;
+}
+
+.insta-video {
+    width: 100%;
+    height: auto;
+    border: 4px solid #000000;
+}
+
+.projektbillede {
+    border: 4px solid #000000;
+    width: 100%; /*tilpas containers bredde*/
+    max-width: 800px; /*max str*/
+    height: 500px; /*bevarer img form*/
+    object-fit: cover; /*fyld plads ud*/
+}
+
+.kikoplakat {
+    border: 4px solid #000000;
+    width: 100%; /*tilpas containers bredde*/
+    max-width: 400px; /*max str*/
+    height: auto; /*bevarer img form*/
+    object-fit: cover; /*fyld plads ud*/
+    
+}
+
+
+
+
+
+.app-projekt h1 {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 60px;
+    color: #000000;
+    margin-left: 0;
+    padding: 40px 120px 0;
+}
+
+.omimg {
+    margin-left: 80px;
+    margin-top: 40px;
+    padding: 40px 40px 0;
+}
+
+.om-billede {
+    max-width: 650px;
+    height: 400px;
+    display: block;
+    border: 2px solid #000000;
 }
 
 
