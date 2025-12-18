@@ -360,6 +360,9 @@ padding - giver indholdet inde i boksen plads*/
 
 }
 
+
+/*BRUGER JAVASCRIPT*/
+/*Gøre siden mere interaktivt altså billedeslideren*/
 /*sliderens container - holder alle billeder i samme container*/
 .slider {
     position: relative; /*gør muligt at placere pile i boksen*/
@@ -608,8 +611,10 @@ padding - giver indholdet inde i boksen plads*/
 /*---------------------------*/
 /*========MOBILE FIST========*/
 /*---------------------------*/
+/*Min layout tilpasses mindre skærm (mobil).
+Padding, tekststr og placering ændres = siden er mere brugervenlig på mindre skærme*/
 
-@media (max-width: 1100px) {
+@media (max-width: 1100px) { /*aktiveres på skærme under*/
 
 /* OM MIG – mobil */
 .Om,
