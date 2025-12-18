@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Tilpasser siden til forskellige enheders størrelser-->
     <title>Præsentationsportfolio</title>
+
      <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
 <body>
     <header> <!--side hoved med navigation-->
         <nav class="navbar"> <!--navigationens container-->
-            <img src="image/Logo.hvid.png" alt="Mit Logo" class="Logo"> <!--logo i header-->
+            <img src="image/logo.hvid.png" alt="Mit Logo" class="Logo"> <!--logo i header-->
             
             <!--liste med menuens links-->
             <ul class="navlinks">
@@ -35,33 +36,37 @@
 
     <section class="Pimg1-tekstboks"> <!--sektion stykke til tekst-->
         <div class="Pimg1-tekst"> <!--tekst-boks i venstre side-->
-            <h1>Kontaktoplysninger</h1> <!--Overskrift-->
+            <h2>Kontaktoplysninger</h2> <!--Overskrift-->
             <!--brødtekst--> 
             <br> 
-            <p><span class="bold">Telefon:</span> +45 53 57 34 12
+            <p>Du er velkommen til at kontakte mig ved spørgsmål, samarbjede eller kreative projekter.</p>
+            <br>
+            <p><span class="bold">Telefon: +45 53 57 34 12</span>
             <br> <!--break-->
-            <p><span class="bold">E-mail:</span> elakoycu@outlook.dk</p>
+            <p><span class="bold">E-mail: elakoycu@outlook.dk</span></p>
+            <br>
+            <br>
+            <p>Du kan altid kontakte mig på telefonnummer eller mail - Jeg svarer typisk inden for 24 timer på hverdage.</p>
         </div>
-        <!--container til billed-slider-->
-         <div class="Pimg1">
-            <img src="Kikoblush.webp" class="projektbillede"> 
+         <div class="kontaktimg1">
+            <img src="image/kontaktmig.webp" class="kontaktimg" alt="kontaktimg"> 
      </div> 
     </section>
 
-    <section class="kontakt">
+    <div class="kontakt">
         <form action="send.php" method="POST" class="kontaktform">
             <input type="text" name="navn" placeholder="Navn" required>
             <input type="email" name="email" placeholder="E-mail" required>
             <textarea name="besked" placeholder="Besked..." required></textarea>
             <button type="submit">Send besked</button>
         </form>
-    </section>
+    </div>
 
 <!--afsluttende signatur (min personlige markering)-->
-    <section class="signature">
+    <div class="signature">
     <div class="sig-line"></div> <!--tynd linje-->
     <img src="image/Logo.sort.png" alt="Logo foot" class="sig-logo"> <!--loget under linje-->
-    </section>
+    </div>
 
     <!--footer nederst på side med navn og udannelse-->
     <footer class="footer">

@@ -242,7 +242,7 @@ padding - giver indholdet inde i boksen plads*/
 }
 
 .kom-tags span {
-    background-color: #8C2848;
+    background-color: #412b32;
     color: #fff;
     padding: 0.6rem 1.4rem;
     border-radius: 999px;
@@ -313,9 +313,9 @@ padding - giver indholdet inde i boksen plads*/
 }
 
 /*brødtekst overskrift produkt fotografering*/
-.Pimg1-tekst h1 {
+.Pimg1-tekst h2, h3, h4, h5, h6 {
     font-family: "Roboto Flex", sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     line-height: 1.7;
     margin-bottom: 15px;
     color: #000000;
@@ -419,13 +419,17 @@ padding - giver indholdet inde i boksen plads*/
 .projekt-knap {
     display: inline-block;
     padding: 12px 24px;
-    background-color: #6a1f39;
+    background-color: #8C2848;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     font-family: "Roboto Flex", sans-serif;
     margin-top: 20px;
     transition: 0.2s;
+}
+
+.projekt-knap button:hover {
+    background-color: #9a5b79;
 }
 
 .figma-knap {
@@ -478,6 +482,22 @@ padding - giver indholdet inde i boksen plads*/
     object-fit: cover; /*fyld plads ud*/
 }
 
+.kontaktimg {
+    border: 4px solid #000000;
+    width: 100%; /*tilpas containers bredde*/
+    max-width: 300px; /*max str*/
+    height: auto; /*bevarer img form*/
+    object-fit: cover; /*fyld plads ud*/
+}
+
+.kontaktimg1 img { 
+    width: 100%; /*tilpas containers bredde*/
+    max-width: 400px; /*max str*/
+    height: auto; /*bevarer img form*/
+    object-fit: cover; /*fyld plads ud*/
+
+}
+
 .kikoplakat {
     border: 4px solid #000000;
     width: 100%; /*tilpas containers bredde*/
@@ -501,8 +521,6 @@ padding - giver indholdet inde i boksen plads*/
     margin-top: 40px;
     margin: 40px 120px 0;
 }
-
-
 
 
 
@@ -577,11 +595,13 @@ padding - giver indholdet inde i boksen plads*/
     border-radius: 6px ;
     cursor: pointer; /*hånd (klik mus) når man hover*/
     transition: 0.2s ease; /*glat overgang når farven ændre sig*/
+    transition: background-color 0.3s ease, color 0.3s ease;;
 }
 
 /*hover effekt på knappen*/
 .kontaktform button:hover {
-    background-color: #9a5b79 /*mørkere farve*/
+    background-color: #9a5b79; /*mørkere farve*/
+    color: #ffffff;
 }
 
 
@@ -590,6 +610,63 @@ padding - giver indholdet inde i boksen plads*/
 /*---------------------------*/
 
 @media (max-width: 1100px) {
+
+/* OM MIG – mobil */
+.Om,
+.Praesentation,
+.Baggrund {
+    padding: 20px;
+}
+
+.Om h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.Praesentation p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.om-billede {
+    max-width: 100%;
+    height: auto;
+}
+
+.Pimg1-tekst h1 {
+    font-size: 28px;
+}
+
+.Pimg1-tekst p,
+.Pfoto-tekst p {
+    font-size: 18px;
+    padding: 20px;
+}
+
+.rhode-billede {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.app-projekt h1 {
+    font-size: 36px;
+    padding: 20px;
+}
+
+.kikoplakat {
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.ToVopslagBox {
+    margin: 20px auto;
+}
+
+.ToVopslag {
+    max-width: 100%;
+}
+
 
 /*billede og tekst placering*/
 .hero {
@@ -605,18 +682,24 @@ padding - giver indholdet inde i boksen plads*/
     margin-bottom: 30px;
     flex: 1;
     max-width: none;      /*tillader tekst kan fylde mere*/
-    font-size: 28px;      /*mindre font str*/
+    font-size: 22px;      /*mindre font str*/
     padding: 0 10px;      /*luft fra skærmens kanter*/
     color: #000000;
-    align-items: left; /*placere venstre*/
+}
+
+.hero-text p {
+    text-align: left;
+    line-height: 1.5;
 }
 
 
 /*billede ved siden af teksten*/
 .hero-image img {
     width: 100%; /*billede fylder bredden*/
-    max-width: 100%; /*minus begrænsing*/
+    max-width: 90%; /*minus begrænsing*/
     height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 /*menu*/
@@ -645,7 +728,7 @@ padding - giver indholdet inde i boksen plads*/
 .img-box {
     width: 100%;
     max-width: 600px;
-    height: 260px;
+    height: auto;
 }
 
 
